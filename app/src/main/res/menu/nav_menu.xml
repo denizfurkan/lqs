@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Genel" >
+        <menu >
+            <item
+                android:id="@+id/action_anasayfa"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:title="Anasayfa" />
+        </menu>
+    </item>
+    <item android:title="Sorgu">
+        <menu>
+            <item
+                android:id="@+id/action_canli_mac"
+                android:icon="@drawable/ic_visibility_black_24dp"
+                android:title="Canlı Maç Sorgu" />
+            <item
+                android:id="@+id/action_profil_sorgu"
+                android:icon="@drawable/ic_search_black_24dp"
+                android:title="Profil Sorgu" />
+            <item
+                android:id="@+id/action_duo_bul"
+                android:icon="@drawable/ic_group_black_24dp"
+                android:title="Duo Bul" />
+        </menu>
+    </item>
+</menu>

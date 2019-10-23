@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.UserSettings_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="260dp"
+                app:errorEnabled="true"
+                app:counterEnabled="true"
+                app:counterMaxLength="90"
+                android:padding="20dp"
+                android:id="@+id/activityUserSettingsTextInputLayoutEmail">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp"
+                    android:hint="E-Mail" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:counterEnabled="true"
+                android:layout_marginTop="330dp"
+                android:padding="20dp"
+                app:passwordToggleEnabled="true"
+                android:id="@+id/activityUserSettingsTextInputLayoutPassword">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textSize="15sp"
+                    android:hint="Şifre"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:layout_marginTop="400dp"
+                android:padding="20dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="90"
+                android:id="@+id/activityUserSettingsTextInputLayoutFullName">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp"
+                    android:hint="Ad Soyad"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="470dp"
+                android:padding="20dp"
+                android:id="@+id/activityUserSettingsTextInputLayoutPhoneNumber">
+
+                <br.com.sapereaude.maskedEditText.MaskedEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    app:allowed_chars="1234567890"
+                    app:mask="### ###-##-##"
+                    android:textSize="15sp"
+                    android:hint="Telefon Numarası"
+                    app:keep_hint="true"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/activityUserSettingsTextInputLayoutGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:layerType="none"
+                android:layout_marginTop="540dp"
+                android:padding="20dp"
+                android:backgroundTint="#2f3640"
+                android:spinnerMode="dropdown"></Spinner>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="600dp"
+                android:padding="20dp"
+                android:text="Kaydet"
+                android:id="@+id/activityUserSettingsButtonSave"/>
+
+        </FrameLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@color/colorBackground"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.florent37.shapeofview.shapes.ArcView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:elevation="4dp"
+            app:shape_arc_cropDirection="outside"
+            app:shape_arc_height="20dp"
+            app:shape_arc_position="bottom">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/lolprofile"
+                android:scaleType="centerCrop" />
+
+        </com.github.florent37.shapeofview.shapes.ArcView>
+
+    </FrameLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/activityUserSettingsProfileImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="-90dp"
+            android:layout_gravity="center"
+            app:civ_border_color="#FF000000" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profil_sorgu_arkaplan">
+
+            <ImageView
+                android:id="@+id/listLayoutProfileImageViewBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/listLayoutProfileTextViewWin"
+                android:text="Bozgun"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="25dp"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/listLayoutProfileImageViewLane"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/gold_mid"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/listLayoutProfileTextViewGameTime"
+                android:layout_below="@+id/listLayoutProfileImageViewPermaItem0"
+                 />
+
+            <TextView
+                android:id="@+id/listLayoutProfileImageViewLaneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOP"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/listLayoutProfileImageViewLane"
+                android:layout_below="@+id/listLayoutProfileImageViewPermaItem0"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/listLayoutProfileImageViewCharacter"
+                android:src="@drawable/lol"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:civ_border_color="#a3813a"
+                android:layout_marginLeft="10dp"
+                app:civ_border_width="3dp"
+                android:layout_marginTop="25dp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/time_icon"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="97dp"
+                />
+            <TextView
+                android:id="@+id/listLayoutProfileTextViewGameTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/listLayoutProfileImageViewPermaItem1"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="5dp"
+                android:text="Oyun Süresi"/>
+
+            <ImageView
+                android:id="@+id/listLayoutProfileImageViewPermaItem0"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_toRightOf="@+id/listLayoutProfileImageViewCharacter"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/square"
+                android:src="@drawable/lol" />
+
+            <ImageView
+                android:id="@+id/listLayoutProfileImageViewPermaItem1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:layout_toRightOf="@+id/listLayoutProfileImageViewPermaItem0"
+                android:background="@drawable/square"
+                android:src="@drawable/lol" />
+
+            <ImageView
+                android:id="@+id/listLayoutProfileImageViewPermaItem2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/square"
+                android:layout_toRightOf="@+id/listLayoutProfileImageViewPermaItem1"
+                android:src="@drawable/lol" />
+
+            <ImageView
+                android:id="@+id/listLayoutProfileImageViewPermaItem3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/square"
+                android:layout_toRightOf="@+id/listLayoutProfileImageViewPermaItem2"
+                android:src="@drawable/lol" />
+
+            <ImageView
+                android:id="@+id/listLayoutProfileImageViewPermaItem4"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/square"
+                android:layout_toRightOf="@+id/listLayoutProfileImageViewPermaItem3"
+                android:src="@drawable/lol" />
+
+            <ImageView
+                android:id="@+id/listLayoutProfileImageViewPermaItem5"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/square"
+                android:layout_toRightOf="@+id/listLayoutProfileImageViewPermaItem4"
+                android:src="@drawable/lol" />
+
+            <ImageView
+                android:id="@+id/listLayoutProfileImageViewPermaItem6"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/square"
+                android:layout_toRightOf="@+id/listLayoutProfileImageViewPermaItem5"
+                android:src="@drawable/lol" />
+
+            <ImageView
+                android:id="@+id/listLayoutProfileImageViewSpell1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="303dp"
+                android:layout_below="@+id/listLayoutProfileImageViewPermaItem0"
+                android:background="@drawable/square"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/lol" />
+
+            <ImageView
+                android:id="@+id/listLayoutProfileImageViewSpell2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/listLayoutProfileImageViewSpell1"
+                android:layout_below="@+id/listLayoutProfileImageViewPermaItem5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:padding="1dp"
+                android:background="@drawable/square"
+                android:src="@drawable/lol" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/kilic"
+                android:layout_toRightOf="@+id/listLayoutProfileTextViewKill"
+                android:layout_marginLeft="-45dp"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:id="@+id/listLayoutProfileTextViewKill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5/"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@+id/listLayoutProfileImageViewSpell2"
+                android:layout_marginLeft="-90dp"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:id="@+id/listLayoutProfileTextViewDeath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8/"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@+id/listLayoutProfileImageViewSpell2"
+                android:layout_marginLeft="-68dp"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:id="@+id/listLayoutProfileTextViewAssist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@+id/listLayoutProfileImageViewSpell2"
+                android:layout_marginLeft="-48dp"
+                android:layout_marginTop="30dp"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

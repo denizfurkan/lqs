@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_oyun"
+        android:title="Oyun Ayarları" />
+    <item
+        android:id="@+id/action_kisisel"
+        android:title="Kişisel Ayarlar" />
+    <item
+        android:id="@+id/action_hakkinda"
+        android:title="Hakkında" />
+    <item
+        android:id="@+id/action_cikis"
+        android:title="Çıkış" />
+</menu>

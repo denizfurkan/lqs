@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignUp_Activity">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/left_arrow"
+        android:layout_margin="25dp"
+        android:id="@+id/signUpActivityBackArrow"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activityLoginBackArrow"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="50sp"
+        android:fontFamily="@font/medium"
+        android:textColor="#000000"
+        android:text="Hey !"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activityLoginBackArrow"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/light"
+        android:textColor="#000000"
+        android:text="Kayıt İşlemine Başlayalım.."/>
+
+    <EditText
+        android:id="@+id/signUpActivityTextInputLayoutEmail"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/input_field"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="40dp"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress"
+        android:maxLength="90"/>
+
+
+    <EditText
+        android:id="@+id/signUpActivityTextInputLayoutPassword"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/signUpActivityTextInputLayoutEmail"
+        android:background="@drawable/input_field"
+        android:inputType="textPassword"
+        android:hint="Şifre"/>
+
+    <EditText
+        android:id="@+id/signUpActivityTextInputLayoutFullName"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_field"
+        android:layout_below="@+id/signUpActivityTextInputLayoutPassword"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="40dp"
+        android:hint="Isım - Soyisim"
+        android:inputType="textPersonName"
+        android:maxLength="90"/>
+
+    <Button
+        android:layout_width="172dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/bold"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:text="Kayıt Ol"
+        android:layout_below="@+id/signUpActivityTextInputLayoutFullName"
+        android:id="@+id/signUpActivityButtonSave"/>
+
+    <TextView
+        android:id="@+id/loginActivityTextViewSss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUpActivityTextInputLayoutFullName"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginRight="31dp"
+        android:layout_toRightOf="@+id/signUpActivityButtonSave"
+        android:text="Destek?"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/light"
+        android:text="Zaten Kayıtlı Mısın?"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/signUpActivityTextViewSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/bold"
+        android:textColor="#1B0435"
+        android:text="Giriş Yap"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

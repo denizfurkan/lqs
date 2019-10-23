@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activity.Welcome_Activity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/light"
+        android:text="Üye Değil Misin?"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/activityWelcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="163dp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/bold"
+        android:textSize="16sp"
+        android:text="Kayıt Ol"
+        android:textColor="#1B0435" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="Hosgeldin!"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="120dp"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/light"
+        android:text="Görüştüğümüze Sevindim!"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="180dp"
+        android:textAlignment="center"
+        android:textColor="#EEECEC"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/activityWelcomeButton"
+        android:layout_width="172dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/bold"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="220dp"
+        android:text="Giriş Yap"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

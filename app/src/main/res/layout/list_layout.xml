@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000">
+
+            <ImageView
+                android:id="@+id/listLayoutImageView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/lol"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/listLayoutTextViewBaslik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_margin="15dp"
+                android:text="League Of Legends 9.13.1 Yaması"/>
+
+            <TextView
+                android:id="@+id/listLayoutTextViewKategori"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_below="@+id/listLayoutTextViewBaslik"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="-5dp"
+                android:textAlignment="center"
+                android:text="Oyun" />
+
+            <TextView
+                android:id="@+id/listLayoutTextViewAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:fontFamily="@font/regular"
+                android:textColor="#B6B2B2"
+                android:layout_marginRight="50dp"
+                android:layout_toRightOf="@+id/listLayoutTextViewKategori"
+                android:layout_below="@+id/listLayoutTextViewBaslik"
+                android:layout_alignParentRight="true"
+                android:text="denizf.b@outlook.com"
+                android:layout_marginTop="-5dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/footer"
+                android:layout_marginTop="88dp"
+                />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

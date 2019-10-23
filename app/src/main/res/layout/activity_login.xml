@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Login_Activity">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/left_arrow"
+        android:layout_margin="25dp"
+        android:id="@+id/activityLoginBackArrow"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/light"
+        android:text="Üye Değil Misin?"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/activityWelcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="163dp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/bold"
+        android:textSize="16sp"
+        android:text="Kayıt Ol"
+        android:textColor="#1B0435" />
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/medium"
+        android:text="Merhaba !"
+        android:textColor="#1B0435"
+        android:textSize="45sp" />
+
+    <EditText
+        android:id="@+id/loginActivityTextInputLayoutEmail"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/input_field"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="40dp"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress"
+        android:maxLength="90"/>
+
+    <EditText
+        android:id="@+id/loginActivityTextInputLayoutPassword"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/loginActivityTextInputLayoutEmail"
+        android:background="@drawable/input_field"
+        android:inputType="textPassword"
+        android:hint="Şifre"/>
+
+
+    <Button
+        android:layout_width="172dp"
+        android:layout_height="45dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/bold"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:text="Giriş Yap"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loginActivityTextInputLayoutPassword"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/button"
+        android:id="@+id/loginActivityButtonSignIn" />
+
+    <TextView
+        android:id="@+id/loginActivityTextViewSss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginActivityTextInputLayoutPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="31dp"
+        android:layout_toRightOf="@+id/activityUserSettingsTextInputLayoutPassword"
+        android:text="Destek?"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/loginActivityTextViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginActivityTextInputLayoutEmail"
+        android:layout_marginBottom="221dp"
+        android:text="Kayıt Ol" />
+
+
+</RelativeLayout>
